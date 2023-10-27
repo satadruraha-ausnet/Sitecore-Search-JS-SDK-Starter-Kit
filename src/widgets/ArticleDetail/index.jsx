@@ -32,7 +32,7 @@ export const ArticleDetailComponent = ({ id }) => {
     <DetailWrapper ref={widgetRef}>
       <DetailHeader>
         <DetailHeaderContent>
-          <DetailHeaderTitle>{mainArticle.title}</DetailHeaderTitle>
+          <DetailHeaderTitle>{mainArticle.name}</DetailHeaderTitle>
         </DetailHeaderContent>
         <DetailHeaderContent>
           <DetailHeaderImage src={mainArticle.image_url || mainArticle.image || DEFAULT_IMAGE} />
