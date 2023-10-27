@@ -54,7 +54,7 @@ const Articles = ({
           articles.map((article, index) => (
             <NavMenuStyled.SubItem key={`${article.id}@${article.source_id}`}>
               <NavMenuStyled.Link
-                title={article.title}
+                title={article.name}
                 onClick={(e) => {
                   e.preventDefault();
                   onItemClick({ id: article.id || '', index });
@@ -67,7 +67,7 @@ const Articles = ({
                   </ArticleCardStyled.ImageWrapper>
                   <ArticleCardStyled.Name>
                     <HighlightComponent
-                      text={getDescription(article, 'title')}
+                      text={getDescription(article, 'name')}
                       preSeparator={HIGHLIGHT_DATA.pre}
                       postSeparator={HIGHLIGHT_DATA.post}
                       highlightElement={HIGHLIGHT_DATA.highlightTag}
@@ -168,7 +168,7 @@ export const PreviewSearchComponent = ({ defaultProductsPerPage = 6 }) => {
       query
         .getRequest()
         .setSearchQueryHighlightFragmentSize(500)
-        .setSearchQueryHighlightFields(['title', 'description'])
+        .setSearchQueryHighlightFields(['name', 'description'])
         .setSearchQueryHighlightPreTag(HIGHLIGHT_DATA.pre)
         .setSearchQueryHighlightPostTag(HIGHLIGHT_DATA.post);
     },

@@ -224,7 +224,7 @@ export const SearchResultsWithLayoutOptionComponent = ({
                           </ArticleCardStyled.ImageWrapper>
                           <ArticleCardStyled.Title>
                             <ArticleCardStyled.Link
-                              title={a.title}
+                              title={a.name}
                               to={`/detail/${a.id}`}
                               onClick={(e) => {
                                 e.preventDefault();
@@ -232,7 +232,7 @@ export const SearchResultsWithLayoutOptionComponent = ({
                                 navigate(`/detail/${a.id}`);
                               }}
                             >
-                              {a.title}
+                              {a.name}
                             </ArticleCardStyled.Link>
                           </ArticleCardStyled.Title>
                           <ArticleCardStyled.Subtitle>
@@ -264,7 +264,7 @@ export const SearchResultsWithLayoutOptionComponent = ({
                                   navigate(`/detail/${a.id}`);
                                 }}
                               >
-                                {a.title}
+                                {a.name}
                               </ArticleCardRowStyled.Link>
                             </ArticleCardRowStyled.Title>
                             <ArticleCardRowStyled.Content>
