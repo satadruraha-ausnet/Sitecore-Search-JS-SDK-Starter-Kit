@@ -65,7 +65,9 @@ const Articles = ({
                   <ArticleCardStyled.ImageWrapper>
                     <ArticleCardStyled.Image src={article.image_url || article.image || DEFAULT_IMAGE} />
                   </ArticleCardStyled.ImageWrapper>
+
                   <ArticleCardStyled.Name>
+
                     <HighlightComponent
                       text={getDescription(article, 'name')}
                       preSeparator={HIGHLIGHT_DATA.pre}
@@ -73,6 +75,9 @@ const Articles = ({
                       highlightElement={HIGHLIGHT_DATA.highlightTag}
                     />
                   </ArticleCardStyled.Name>
+                  <ArticleCardStyled.Badge className={article.category}>
+                    {article.category}
+                  </ArticleCardStyled.Badge>
                 </ArticleCardStyled.Root>
               </NavMenuStyled.Link>
             </NavMenuStyled.SubItem>
@@ -151,7 +156,9 @@ const getGroupId = (name, value) => `${name}@${value}`;
 export const PreviewSearchComponent = ({ defaultProductsPerPage = 6 }) => {
   const {
     widgetRef,
-    state: { keyphrase },
+    state: { 
+      keyphrase
+     },
     actions: { onItemClick, onKeyphraseChange },
     queryResult: {
       isFetching,

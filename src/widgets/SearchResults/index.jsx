@@ -244,6 +244,7 @@ export const SearchResultsWithLayoutOptionComponent = ({
                             />
                           </ArticleCardStyled.Subtitle>
                           <ArticleCardStyled.Type>{a.type ? a.type : 'Unknown'}</ArticleCardStyled.Type>
+                          
                         </ArticleCardStyled.Root>
                       ))}
                     </GridStyled>
@@ -275,7 +276,8 @@ export const SearchResultsWithLayoutOptionComponent = ({
                                 highlightElement={HIGHLIGHT_DATA.highlightTag}
                               />
                             </ArticleCardRowStyled.Content>
-                            <ArticleCardRowStyled.Type>{a.type ? a.type : 'Unknown'}</ArticleCardRowStyled.Type>
+                            <ArticleCardRowStyled.Type className={a.category}>{a.category ? a.category : 'Unknown'}</ArticleCardRowStyled.Type>
+                            
                           </ArticleCardRowStyled.Right>
                         </ArticleCardRowStyled.Root>
                       ))}

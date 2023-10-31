@@ -82,13 +82,56 @@ const ArticleCardRowContentStyled = styled(ArticleCard.Content)`
 `;
 
 const ArticleCardRowTypeStyled = styled(ArticleCard.Id)`
-  border-top: solid 1px ${theme.vars.palette.grey['400']};
+  /* border-top: solid 1px ${theme.vars.palette.grey['400']};
   margin-top: ${theme.vars.spacing.m};
   padding-top: ${theme.vars.spacing.m};
   font-family: ${theme.vars.typography.fontFamilySystem};
   font-size: ${theme.vars.typography.fontSize2.fontSize};
   color: ${theme.vars.palette.primary.contrastText};
+  font-weight: bold; */
+  align-items: center;
+  font-family: "Open Sans", Arial, Verdana, sans-serif;
   font-weight: bold;
+  font-size: 11px;
+  display: inline-block;
+
+  white-space: nowrap;
+  width: auto;
+  position: relative;
+  border-radius: 100px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0px 12px 0px 12px;
+  text-overflow: ellipsis;
+  line-height: 1.25rem;
+  color: #595959;
+  text-transform: uppercase;
+  word-break: break-word;
+
+  &:before {
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    left: 6px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+  }
+
+  //background: #ffebb6;
+
+  &.landing_page {
+    background: #ffebb6;
+  }
+
+  &.Unknown {
+    background: #ffd5d1;
+  }
+
+  &.guide {
+    background: #b4eda0;
+  }
 `;
 
 const ArticleCardRowLinkStyled = styled(Link)`
