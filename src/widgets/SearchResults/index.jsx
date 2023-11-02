@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
 import { ArrowLeftIcon, ArrowRightIcon, CheckIcon, GridIcon, ListBulletIcon } from '@radix-ui/react-icons';
 import { Presence } from '@radix-ui/react-presence';
@@ -36,7 +36,7 @@ export const SearchResultsWithLayoutOptionComponent = ({
  defaultItemsPerPage = 24,
 }) => {
   const { language } = useContext(LanguageContext);
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const {
     widgetRef,
     actions: {
@@ -225,7 +225,7 @@ export const SearchResultsWithLayoutOptionComponent = ({
                           <ArticleCardStyled.Title>
                             <ArticleCardStyled.Link
                               title={a.name}
-                              to={`/detail/${a.id}`}
+                              to={`${a.url}`}
                               onClick={(e) => {
                                 e.preventDefault();
                                 onItemClick({ id: a.id || '', index });
@@ -259,11 +259,12 @@ export const SearchResultsWithLayoutOptionComponent = ({
                           <ArticleCardRowStyled.Right>
                             <ArticleCardRowStyled.Title>
                               <ArticleCardRowStyled.Link
-                                to={`/detail/${a.id}`}
+                                to={`${a.url}`}
                                 onClick={(e) => {
                                   e.preventDefault();
                                   onItemClick({ id: a.id || '', index });
-                                  navigate(`/detail/${a.id}`);
+                                  //navigate(`/detail/${a.id}`);
+                                  location.href = a.url;
                                 }}
                               >
                                 {a.name}
