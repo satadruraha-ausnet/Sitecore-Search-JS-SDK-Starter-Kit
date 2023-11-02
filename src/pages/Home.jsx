@@ -8,7 +8,8 @@ import HomeFAQ from '../components/HomeFAQ';
 import HomeHighlighted from '../widgets/HomeHighlighted/index.jsx';
 
 const HighlightedArticles = styled(PageSection)`
-  background: url(https://wwwsitecorecom.azureedge.net/assets/images/Sitecore_3D-Composition_Neutral_Scene04.jpg);
+  //background: url(https://wwwsitecorecom.azureedge.net/assets/images/Sitecore_3D-Composition_Neutral_Scene04.jpg);
+  background-color: #eff3f8;
   background-size: cover;
   background-position: left;
   opacity: 0.9;
@@ -22,6 +23,7 @@ const Home = () => {
       <HighlightedArticles>
         <HighlightedWrapper>
           <HTMBlockWidget rfkId="highlight_title" />
+          <h3 className="articleHighlightTitle">Promoted Guides</h3>
           <HomeHighlighted rfkId="search_home_highlight_articles" />
         </HighlightedWrapper>
       </HighlightedArticles>

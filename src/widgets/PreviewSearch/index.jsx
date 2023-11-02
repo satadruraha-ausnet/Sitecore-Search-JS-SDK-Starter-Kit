@@ -27,13 +27,13 @@ const ArticleType = PropTypes.shape({
   source_id: PropTypes.string,
   highlight: HighlightType,
 })
-
+ 
 const Articles = ({
   loading = false,
   articles,
   onItemClick,
 }) => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   return (
     <NavMenuStyled.Grid>
       <Presence present={loading}>
@@ -58,7 +58,8 @@ const Articles = ({
                 onClick={(e) => {
                   e.preventDefault();
                   onItemClick({ id: article.id || '', index });
-                  navigate(`/detail/${article.id}`);
+                  //navigate(`/detail/${article.id}`);
+                  location.href=article.url;
                 }}
               >
                 <ArticleCardStyled.Root>
@@ -225,7 +226,7 @@ export const PreviewSearchComponent = ({ defaultProductsPerPage = 6 }) => {
                 }
               }}
               autoComplete="off"
-              placeholder="Type to search..."
+              placeholder="I'm searching for..."
             />
           </form>
           <NavMenuStyled.MainContent>

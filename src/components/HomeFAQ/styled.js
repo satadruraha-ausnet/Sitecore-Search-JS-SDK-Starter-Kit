@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { PageSection } from '../Common';
 
 export const FAQBackground = styled.div`
-  background-image: url('https://wwwsitecorecom.azureedge.net/assets/images/Sitecore_3D-Composition_Neutral_Scene07.jpg');
-  background-color: #02a79a;
+  //background-image: url('https://wwwsitecorecom.azureedge.net/assets/images/Sitecore_3D-Composition_Neutral_Scene07.jpg');
+  background-color: #1d294e;
   position: absolute;
   top: 0;
   left: 0;
@@ -23,6 +23,6 @@ export const FAQContent = styled.div`
 `;
 
 export const FAQPageSection = styled(PageSection)`
-  background-color: #02a79a;
+  background-color: #1d294e;
   padding-top: 40px;
 `;

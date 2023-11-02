@@ -12,7 +12,7 @@ const HomeHeroWidget = () => {
     },
   } = useQuestions({
     state: {
-      keyphrase: 'What is XM cloud',
+      keyphrase: 'what is a category',
       relatedQuestions: 3,
     },
   });
@@ -21,7 +21,7 @@ const HomeHeroWidget = () => {
       {relatedQuestionsResponse.map((a, index) => (
         <HeroGlassPanel key={`${a.question}-${index}`} ref={widgetRef}>
           <h1>{a.question}</h1>
-          <div>{a.answer}</div>
+          <div className='test'>{a.answer}</div>
         </HeroGlassPanel>
       ))}
     </>

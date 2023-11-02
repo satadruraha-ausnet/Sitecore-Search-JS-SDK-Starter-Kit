@@ -21,6 +21,7 @@ export const InputField = styled.input`
   outline: none;
   font-size: 24px;
   color: ${theme.vars.palette.primary.contrastText};
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const HeaderIconWrapper = styled.div`

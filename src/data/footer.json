@@ -1,33 +1,7 @@
 [{
-  "mainTitle": "SaaS DXP Products",
-  "items": ["XM Cloud",
-    "Content Hub ONE",
-    "Content Hub DAM",
-    "Content Hub Operations",
-    "Search",
-    "Customer Data Platform",
-    "Personalize",
-    "Send",
-    "Connect",
-    "Discover",
-    "OrderCloud"]
+  "mainTitle": "Get in touch",
+  "items": ["Can't find what you're looking for? Or want to talk to us?"]
 },{
-  "mainTitle": "Platform DXP Products",
-  "items": ["Experience Manager",
-    "Experience Platform",
-    "Managed Cloud"]
-}, {
-  "mainTitle": "Resources",
-  "items": ["Training",
-    "Insights blog",
-    "Developer resources",
-    "What's new"]
-}, {
-  "mainTitle": "Company",
-  "items": ["Newsroom",
-    "Contact us",
-    "Office locations",
-    "Careers",
-    "Legal & Trust",
-    "Sitecore brand resources"]
+  "mainTitle": "",
+  "items": ["Privacy", "Community Hub", "Terms of use", "Sitemap"]
 }]

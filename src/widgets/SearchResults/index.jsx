@@ -229,7 +229,8 @@ export const SearchResultsWithLayoutOptionComponent = ({
                               onClick={(e) => {
                                 e.preventDefault();
                                 onItemClick({ id: a.id || '', index });
-                                navigate(`/detail/${a.id}`);
+                                //navigate(`/detail/${a.id}`);
+                                location.href = a.url;
                               }}
                             >
                               {a.name}

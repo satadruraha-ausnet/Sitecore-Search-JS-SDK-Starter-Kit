@@ -4,7 +4,8 @@ import { ArticleCard, NavMenu, theme } from '@sitecore-search/ui';
 
 const NavMenuRootStyled = styled(NavMenu.Root)`
   width: 90%;
-  font-family: ${theme.vars.typography?.fontFamilySystem};
+  //font-family: ${theme.vars.typography?.fontFamilySystem};
+  font-family: 'Roboto', sans-serif;
   background: var(--sdc-palette-secondary-main);
   margin: auto;
 `;
@@ -193,11 +194,13 @@ const NavMenuInputTriggerStyled = styled(NavMenu.InputTrigger)`
   background: none;
   border: none;
   width: 100%;
-  padding: ${theme.vars.spacing?.xs};
+  //padding: ${theme.vars.spacing?.xs};
+  padding: 6px;
   height: 40px;
   outline: none;
   font-size: 24px;
   color: ${theme.vars.palette.primary.contrastText};
+  font-family: 'Roboto', sans-serif;
 `;
 
 const NavMenuLinkStyled = styled(NavMenu.Link)`

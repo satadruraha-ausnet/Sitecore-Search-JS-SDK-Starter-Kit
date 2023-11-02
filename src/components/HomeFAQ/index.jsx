@@ -7,7 +7,7 @@ const HomeHero = () => {
   return (
     <FAQPageSection>
       <FAQBackground />
-      <HTMBlockWidget rfkId="faqs_title" />
+      <HTMBlockWidget rfkId="faq_title" />
       <FAQContent>
         <HomeHeroWidget rfkId="rfkid_qa" />
       </FAQContent>
